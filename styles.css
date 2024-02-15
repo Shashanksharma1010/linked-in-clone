@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+:root {
+    --main-color: #0383fc;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navigation bar */
+
+nav, #links-container, #links-list{
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-right:  3%;
+}
+
+#links-container li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.links-anchor {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+}
+
+.links-anchor:hover {
+    color:black;
+}
+
+.links-anchor i {
+    padding: 5px;
+    /*background: yellow;*/
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav div button {
+    border:  none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 1rem;
+    border-radius: 40px;
+    margin: 10px 8px;
+}
+
+.Join-in {
+    background: none;
+}
+
+.Sign-in {
+    background: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.Sign-in:hover {
+    background-color: rgba(27, 142, 250, 0.1);
+}
+
+/* Navigation Bar ends */
+
+
+
+
+
+
+
+/* Banner Section */
+
+#banner-menu {
+    grid-area: menu;
+}
+
+#banner-img {
+    grid-area: img;
+}
+
+#banner-section {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-rows: 500px 600px; */
+    grid-template-areas:
+    'menu img' 
+    ;
+}
+
+.banner-menu p {
+    font-size: 2.6rem;
+    padding:0rem 3rem;
+    padding-top:2rem;
+    color:#c67627;
+
+}
+
+.banner-menu-button-container {
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+}
+
+.banner-menu-button {
+    width:70%;
+    border-radius: 8px;
+    padding:1.25rem;
+    margin:0.5em;
+    border: 0.5px solid black;
+}
+
+.banner-menu-button i {
+    float: right;
+    font-size: larger;
+}
+
+
+
+
+
+/* highlighted topics section */
+
+.topics-heading {
+    grid-area: topics-heading;
+}
+
+.topics {
+    grid-area: topics;
+}
+
+#section1, #section3 {
+    background-color:rgb(243, 242, 229);
+}
+
+.topics-section {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-rows: 100px 250px;
+    grid-template-areas:
+    'topics-heading topics' 
+    ;
+    background-color:rgb(243, 242, 229);
+}
+
+#section2 {
+    background-color:white;
+    grid-template-rows: 100px 400px;
+}
+
+#section3 {
+    color:brown;
+    grid-template-rows: 125px 125px;
+}
+
+.topics-heading {
+    font-size: 2.25rem;
+    padding:3rem 5rem;
+}
+
+.topics {
+    padding:3rem;
+}
+
+.topics-links-container {
+    padding:0.5rem;
+    width:107%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.topics-links-container button {
+    padding: 0.75rem;
+    margin: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: all 0.25s linear;
+}
+
+.topics-links-container button:hover {
+    background-color: rgba(0,0,0,0.04);
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.topics-links {
+    display: inline-block;
+    padding:0.75rem 1rem;
+    margin:0.25rem;
+    border:1px solid black;
+    border-radius: 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#all-topics-links {
+    border: 1px solid var(--main-color);
+    color:#0073de;
+}
+
+
+
+
+
+
+
+
+
+
+/* Get started */
+#get-started-action {
+    position: relative;
+}
+
+.get-started-btn {
+    position: absolute;
+    top:25%;
+    left:9%;
+    border:none;
+    padding:1rem 1.5rem;
+    border-radius:40px;
+    background-color:#0073de;
+    color:white;
+
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.footer-lists {
+    grid-area: list;
+}
+
+.footer-img {
+    grid-area: img;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-areas:
+    'img list';
+    grid-template-columns: 1fr 3fr;
+    padding:1rem;
+    background-color: rgb(234, 234, 232);;
+}
+
+.footer-lists {
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+    padding: 1rem;
+}
