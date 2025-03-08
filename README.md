@@ -24,7 +24,7 @@ The project highlights the ability to recreate modern web designs and deliver an
 ## 📌 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/linkedin-clone.git
+   git clone https://github.com/Shashanksharma1010/linked-in-clone.git
    ```
 2. Navigate to the project directory:
    ```bash
