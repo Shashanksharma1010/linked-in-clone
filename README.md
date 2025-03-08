@@ -28,7 +28,7 @@ The project highlights the ability to recreate modern web designs and deliver an
    ```
 2. Navigate to the project directory:
    ```bash
-   cd linkedin-clone
+   cd linked-in-clone
    ```
 3. Open **index.html** in your browser to view the website.
 
